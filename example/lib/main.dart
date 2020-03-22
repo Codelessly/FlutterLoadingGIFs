@@ -5,7 +5,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:loading_gifs/loading_gifs.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,14 +13,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoApp(
       title: 'Loading GIFS',
-      builder: (context, widget) => ResponsiveWrapper.builder(widget,
-          maxWidth: 1200,
-          minWidth: 450,
-          defaultScale: true,
-          breakpoints: [
-            ResponsiveBreakpoint(breakpoint: 450, name: MOBILE),
-          ],
-          background: Container(color: Color(0xFFF5F5F5))),
       home: CupertinoPageScaffold(
           child: CustomScrollView(
         shrinkWrap: true,

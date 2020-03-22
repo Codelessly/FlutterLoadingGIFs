@@ -10,7 +10,6 @@ dependencies:
     sdk: flutter
   loading_gifs:
     path: ../
-  responsive_framework: ^0.0.4
 
 dev_dependencies:
   flutter_test:
