@@ -10,9 +10,19 @@ dependencies:
     sdk: flutter
   loading_gifs:
     path: ../
+  responsive_framework: ^0.0.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/Loading-GIFs-Logo.png"
+  image_path_ios: "assets/Loading-GIFs-Logo-iOS.png"
+  adaptive_icon_background: "#FFFFFFFF"
+  adaptive_icon_foreground: "assets/Loading-GIFs-Logo-Adaptive.png"
 
 flutter:
