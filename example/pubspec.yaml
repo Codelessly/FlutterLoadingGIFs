@@ -25,3 +25,4 @@ flutter_icons:
   adaptive_icon_foreground: "assets/Loading-GIFs-Logo-Adaptive.png"
 
 flutter:
+  uses-material-design: true

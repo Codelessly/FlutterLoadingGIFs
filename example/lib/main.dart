@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
@@ -8,66 +9,175 @@ import 'package:loading_gifs/loading_gifs.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  ScrollController scrollController;
+  Timer scrollTimer;
+  bool scrolling = false;
+  bool firstScrollStart = true;
+
+  @override
+  void initState() {
+    super.initState();
+    scrollController = ScrollController();
+  }
+
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
       title: 'Loading GIFS',
       home: CupertinoPageScaffold(
-          child: CustomScrollView(
-        shrinkWrap: true,
-        slivers: <Widget>[
-          CupertinoSliverNavigationBar(
-            largeTitle: Text(
-              "Loading GIFs",
-              style: TextStyle(color: Color(0xFF1C1C1E)),
+        child: Stack(
+          children: <Widget>[
+            CustomScrollView(
+              shrinkWrap: true,
+              slivers: <Widget>[
+                SliverList(
+                  delegate: SliverChildListDelegate.fixed(<Widget>[
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 200),
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        controller: scrollController,
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(6, 0, 6, 0),
+                          child: Row(
+                            children: <Widget>[
+                              for (double i = 1; i <= 10; i++)
+                                Container(
+                                  width: 400,
+                                  height: 400,
+                                  child: Image.asset(cupertinoActivityIndicator,
+                                      scale: i, width: 400, height: 400),
+                                ),
+                              for (double i = 9; i >= 2; i--)
+                                Container(
+                                  width: 400,
+                                  height: 400,
+                                  child: Image.asset(cupertinoActivityIndicator,
+                                      scale: i, width: 400, height: 400),
+                                ),
+                              for (double i = 1; i <= 10; i++)
+                                Container(
+                                  width: 400,
+                                  height: 400,
+                                  child: Image.asset(cupertinoActivityIndicator,
+                                      scale: i, width: 400, height: 400),
+                                ),
+                              for (double i = 9; i >= 1; i--)
+                                Container(
+                                  width: 400,
+                                  height: 400,
+                                  child: Image.asset(cupertinoActivityIndicator,
+                                      scale: i, width: 400, height: 400),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ]),
+                ),
+              ],
             ),
-            backgroundColor: Colors.transparent,
-            border: Border.all(style: BorderStyle.none),
-            automaticallyImplyLeading: false,
-          ),
-          SliverList(
-            delegate: SliverChildListDelegate.fixed(<Widget>[
-              subHeaderText("Cupertino", subtitle: "iOS"),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(6, 0, 6, 0),
-                  child: Row(
-                    children: <Widget>[
-                      for (double i = 1; i <= 10; i++)
-                        ShowcaseCard(
-                          child:
-                              Image.asset(cupertinoActivityIndicator, scale: i),
-                          label: "Size ${i.round()}",
-                        ),
-                    ],
+            Positioned(
+              top: 0,
+              right: 0,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Material(
+                    child: IconButton(
+                      onPressed: () => scrolling ? stopScroll() : startScroll(),
+                      icon: scrolling
+                          ? Icon(null, color: Color(0xFFDFDFDF))
+                          : Icon(Icons.play_circle_outline,
+                              color: Color(0xFFDFDFDF)),
+                      iconSize: 48,
+                    ),
                   ),
-                ),
-              ),
-              subHeaderText("Material", subtitle: "Android"),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(6, 0, 6, 8),
-                  child: Row(
-                    children: <Widget>[
-                      for (double i = 1; i <= 10; i++)
-                        ShowcaseCard(
-                          child:
-                              Image.asset(circularProgressIndicator, scale: i),
-                          label: "Size ${i.round()}",
-                        ),
-                    ],
+                  Material(
+                    child: IconButton(
+                      onPressed: () => resetScroll(),
+                      icon: scrolling
+                          ? Icon(null, color: Color(0xFFDFDFDF))
+                          : Icon(Icons.replay, color: Color(0xFFDFDFDF)),
+                      iconSize: 48,
+                    ),
                   ),
-                ),
+                ],
               ),
-            ]),
-          ),
-        ],
-      )),
+            ),
+          ],
+        ),
+      ),
       debugShowCheckedModeBanner: false,
     );
+  }
+
+  void startScroll() {
+    if (firstScrollStart) {
+      firstScrollStart = false;
+      Future.delayed(Duration(seconds: 1), () => startScroll());
+      return;
+    }
+    if (kIsWeb) {
+      // Timer Method.
+      scrollTimer = Timer.periodic(
+          Duration(microseconds: ((1 / 30) * 1000).round()), (timer) {
+        if (scrollController.offset >=
+            scrollController.position.maxScrollExtent) {
+          stopScroll();
+        }
+        scrollController.jumpTo(scrollController.offset + 10);
+      });
+    } else {
+      // Scroll Controller Method.
+      scrollController
+          .animateTo(scrollController.offset + 2000,
+              duration: Duration(seconds: 3), curve: Curves.linear)
+          .then((value) {
+        print("Continue scroll");
+        if (scrolling == false ||
+            scrollController.offset >=
+                scrollController.position.maxScrollExtent) {
+          stopScroll();
+        } else {
+          startScroll();
+        }
+      });
+    }
+
+    setState(() {
+      scrolling = true;
+    });
+  }
+
+  void stopScroll() {
+    print("Stop scroll");
+    if (kIsWeb) {
+      // Timer Method.
+      scrollTimer.cancel();
+    } else {
+      // Scroll Controller Method.
+      scrollController.animateTo(scrollController.offset,
+          duration: Duration(seconds: 0), curve: Curves.linear);
+    }
+
+    setState(() {
+      scrolling = false;
+    });
+  }
+
+  void resetScroll() {
+    print("Reset scroll");
+    stopScroll();
+    firstScrollStart = true;
+    scrollController.jumpTo(0);
   }
 }
 
