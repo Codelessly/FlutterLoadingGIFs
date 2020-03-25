@@ -52,7 +52,7 @@ Image.asset(circularProgressIndicator, scale: 10);
 
 |![iOS Loading Indicator Large](packages/cupertino_activity_indicator_large.gif)|![iOS Loading Indicator Medium](packages/cupertino_activity_indicator_medium.gif)|![iOS Loading Indicator Small](packages/cupertino_activity_indicator_small.gif)| 
 |--|--|--|
-|[Large (16KB)](packages/cupertino_activity_indicator_large.gif)|[Medium (16KB)](packages/cupertino_activity_indicator_medium.gif)|[Small (17KB)](packages/cupertino_activity_indicator_small.gif)|
+|[Large (16KB)](packages/cupertino_activity_indicator_large.gif)|[Medium (16KB)](packages/cupertino_activity_indicator_medium.gif)|[Small (16KB)](packages/cupertino_activity_indicator_small.gif)|
 
 ### Android (Material) Loading Indicators
 
@@ -66,7 +66,7 @@ Image.asset(circularProgressIndicator, scale: 10);
 
 |![Material Loading Indicator Large](packages/circular_progress_indicator_large.gif)|![Material Loading Indicator Medium](packages/circular_progress_indicator_medium.gif)|![Material Loading Indicator Small](packages/circular_progress_indicator_small.gif)| 
 |--|--|--|
-|[Large (129KB)](packages/circular_progress_indicator_large.gif)|[Medium (161KB)](packages/circular_progress_indicator_medium.gif)|[Small (211KB)](packages/circular_progress_indicator_small.gif)|
+|[Large (129KB)](packages/circular_progress_indicator_large.gif)|[Medium (149KB)](packages/circular_progress_indicator_medium.gif)|[Small (186KB)](packages/circular_progress_indicator_small.gif)|
 
 ## About
 
