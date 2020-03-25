@@ -30,12 +30,36 @@ That's it!
 
 [![Loading GIFs Sizes](packages/Loading%20GIFs%20Sizes.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/)
 
-This library is optimized for size so it only includes the base asset. Change the size of the loading spinners with `scale` and `placeholderScale`.
+### Size
+
+This library is optimized for size so it only includes the base asset sizes. Change the size of the loading spinners using `scale` and `placeholderScale`.
 
 ```dart
 FadeInImage.assetNetwork(placeholder: cupertinoActivityIndicator, image: "image.png", placeholderScale: 5);
 
 Image.asset(circularProgressIndicator, scale: 10);
+```
+
+### Dynamic Images
+
+When loading images whose dimensions are unknown ahead of time, use `cupertinoActivityIndicatorSmall` instead of `cupertinoActivityIndicator`. `cupertinoActivityIndicatorSmall` is a min height variant of `cupertinoActivityIndicator` which allows Flutter to correctly expand the loaded image into the layout.
+
+The small variant should be used when loading a list of images or compositing an image from multiple images.
+
+```dart
+  ListView(
+    children: <Widget>[
+      FadeInImage.assetNetwork(
+          placeholder: cupertinoActivityIndicatorSmall,
+          image: "image_1.png"),
+      FadeInImage.assetNetwork(
+          placeholder: cupertinoActivityIndicatorSmall,
+          image: "image_2.png"),
+      FadeInImage.assetNetwork(
+          placeholder: cupertinoActivityIndicatorSmall,
+          image: "image_3.png"),
+    ],
+  )
 ```
 
 ## Assets
@@ -94,7 +118,7 @@ Loading GIFs is licensed under Zero-Clause BSD and released as Emailware. If you
   <img alt="Codelessly Website"
        src="https://lh3.googleusercontent.com/YmMGcgeO7Km9-J9vFRByov5sb7OUKetnKs8pTi0JZMDj3GVJ61GMTcTlHB7u9uHDHag=w96" />
 </a>
-<a href="https://twitter.com/codelessly1">
+<a href="https://twitter.com/codelessly_">
   <img alt="Codelessly Twitter"
        src="https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w96" />
 </a>
