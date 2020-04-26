@@ -1,12 +1,12 @@
-[![Loading GIFs Cover](packages/Loading%20GIFs%20Cover.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=image&utm_campaign=cover)
-# [Loading GIFs](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=link&utm_campaign=title)
+[![Loading GIFs Cover](packages/Loading%20GIFs%20Cover.gif)](https://gallery.codelessly.com/flutterwebsites/loadinggifs/?utm_medium=image&utm_campaign=cover)
+# [Loading GIFs](https://gallery.codelessly.com/flutterwebsites/loadinggifs/?utm_medium=link&utm_campaign=title)
 [![Pub release](https://img.shields.io/pub/v/loading_gifs.svg?style=flat-square)](https://pub.dev/packages/loading_gifs) [![GitHub Release Date](https://img.shields.io/github/release-date/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs/releases) [![GitHub issues](https://img.shields.io/github/issues/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs/issues) [![GitHub top language](https://img.shields.io/github/languages/top/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://libraries.io/github/Codelessly/FlutterLoadingGIFs) [![License](https://img.shields.io/badge/License-BSD%200--Clause-orange.svg?style=flat-square)](https://opensource.org/licenses/0BSD)
 
 <img src="https://github.com/Codelessly/FlutterLoadingGIFs/blob/master/packages/cupertino_activity_indicator_square_large.gif?raw=true" width="128">
 
 > ### High quality Android and iOS loading spinners.
 
-[View Demo](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=link&utm_campaign=demo)
+[View Demo](https://gallery.codelessly.com/flutterwebsites/loadinggifs/?utm_medium=link&utm_campaign=demo)
 
 Loading GIFs is a collection of high fidelity loading animations in GIF format. Included are Android "Material Design" and iOS "Cupertino" default loading indicators.
 
@@ -28,7 +28,7 @@ That's it!
 
 ## Usage Tips
 
-[![Loading GIFs Sizes](packages/Loading%20GIFs%20Sizes.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=image&utm_campaign=preview)
+[![Loading GIFs Sizes](packages/Loading%20GIFs%20Sizes.gif)](https://gallery.codelessly.com/flutterwebsites/loadinggifs/?utm_medium=image&utm_campaign=preview)
 
 ### Size
 
