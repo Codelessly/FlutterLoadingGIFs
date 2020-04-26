@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1
+- Update ReadMe images and links.
+
 ## 0.2.0
 - Min Height Loading Variants.
 - Optimize Loading Assets.

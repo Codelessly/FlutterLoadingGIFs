@@ -1,12 +1,12 @@
-[![Loading GIFs Cover](packages/Loading%20GIFs%20Cover.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/)
-# [Loading GIFs](https://gallery.imfast.io/flutterwebsites/loadinggifs/)
+[![Loading GIFs Cover](packages/Loading%20GIFs%20Cover.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=image&utm_campaign=cover)
+# [Loading GIFs](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=link&utm_campaign=title)
 [![Pub release](https://img.shields.io/pub/v/loading_gifs.svg?style=flat-square)](https://pub.dev/packages/loading_gifs) [![GitHub Release Date](https://img.shields.io/github/release-date/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs/releases) [![GitHub issues](https://img.shields.io/github/issues/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs/issues) [![GitHub top language](https://img.shields.io/github/languages/top/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://github.com/Codelessly/FlutterLoadingGIFs) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/Codelessly/FlutterLoadingGIFs.svg?style=flat-square)](https://libraries.io/github/Codelessly/FlutterLoadingGIFs) [![License](https://img.shields.io/badge/License-BSD%200--Clause-orange.svg?style=flat-square)](https://opensource.org/licenses/0BSD)
 
 <img src="https://github.com/Codelessly/FlutterLoadingGIFs/blob/master/packages/cupertino_activity_indicator_square_large.gif?raw=true" width="128">
 
 > ### High quality Android and iOS loading spinners.
 
-[View Demo](https://gallery.imfast.io/flutterwebsites/loadinggifs/)
+[View Demo](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=link&utm_campaign=demo)
 
 Loading GIFs is a collection of high fidelity loading animations in GIF format. Included are Android "Material Design" and iOS "Cupertino" default loading indicators.
 
@@ -28,7 +28,7 @@ That's it!
 
 ## Usage Tips
 
-[![Loading GIFs Sizes](packages/Loading%20GIFs%20Sizes.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/)
+[![Loading GIFs Sizes](packages/Loading%20GIFs%20Sizes.gif)](https://gallery.imfast.io/flutterwebsites/loadinggifs/?utm_medium=image&utm_campaign=preview)
 
 ### Size
 
@@ -94,11 +94,11 @@ The small variant should be used when loading a list of images or compositing an
 
 ## About
 
-Here at Codelessly, we're working on #NoCode and code generation automation tools to increase productivity. If you are interested in a website builder powered by computer vision or flow-based automation, drop us a line below 😎
+Here at Codelessly, we're working on #NoCode and code generation automation tools to increase productivity. If that sounds interesting, you'll want to subscribe to updates below 😎
 
 Loading GIFs is licensed under Zero-Clause BSD and released as Emailware. If you like this project or it helped you, please subscribe to updates. Although it is not required, you might miss the goodies we share!
 
-[![Codelessly Newsletter Signup](packages/Email%20Newsletter%20Signup.png)](https://codelessly.com)
+[![Codelessly Newsletter Signup](https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/Email%20Newsletter%20Signup.png)](https://codelessly.com/?utm_medium=banner&utm_campaign=newsletter_subscribe)
 
 ## Contributors ❤️
 
@@ -108,17 +108,17 @@ Loading GIFs is licensed under Zero-Clause BSD and released as Emailware. If you
 **Development:** 
 * [Ray Li](https://github.com/searchy2)
 
-**Sponsor:** [Codelessly - No Code Automation Tools](https://codelessly.com)
+**Sponsor:** [Codelessly - No Code Automation Tools](https://codelessly.com/?utm_medium=link&utm_campaign=direct)
 
 <a href="mailto:ray@codelessly.com">
   <img alt="Codelessly Email"
        src="https://lh3.googleusercontent.com/yN_m90WN_HSCohXdgC2k91uSTk9dnYfoxTYwG_mv_l5_05dV2CzkQ1B6rEqH4uqdgjA=w96" />
 </a>
-<a href="https://codelessly.com">
+<a href="https://codelessly.com/?utm_medium=icon&utm_campaign=direct">
   <img alt="Codelessly Website"
        src="https://lh3.googleusercontent.com/YmMGcgeO7Km9-J9vFRByov5sb7OUKetnKs8pTi0JZMDj3GVJ61GMTcTlHB7u9uHDHag=w96" />
 </a>
-<a href="https://twitter.com/codelessly_">
+<a href="https://twitter.com/BuildCodelessly">
   <img alt="Codelessly Twitter"
        src="https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w96" />
 </a>
@@ -128,7 +128,7 @@ Loading GIFs is licensed under Zero-Clause BSD and released as Emailware. If you
 </a>
 <br></br>
 
-[![Flutter Logo Banner](packages/Flutter%20Logo%20Banner.png)](https://github.com/flutter/flutter)
+[![Flutter Logo Banner](https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/Flutter%20Logo%20Banner.png)](https://github.com/flutter/flutter)
 
 ## License
 
