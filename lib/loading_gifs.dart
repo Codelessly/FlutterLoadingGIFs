@@ -37,3 +37,13 @@ const String circularProgressIndicator =
 /// ```
 const String circularProgressIndicatorSmall =
     "packages/loading_gifs/assets/images/circular_progress_indicator_small.gif";
+
+/// Transparent 1x1 pixel empty placeholder.
+/// [FadeInNetworkImage] requires a valid placeholder
+/// image. Use this empty placeholder to avoid
+/// AssetBundle errors.
+/// ```dart
+/// FadeInImage.assetNetwork(placeholder: placeholderEmpty, image: 'image_path');
+///```
+const String placeholderEmpty =
+    "packages/loading_gifs/assets/images/placeholder_empty.png";
