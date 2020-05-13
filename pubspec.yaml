@@ -1,6 +1,6 @@
 name: loading_gifs
 description: Loading indicator GIFs. Material and Cupertino (Android and iOS) loading indicators in assorted sizes. Use as placeholders for loading remote image assets.
-version: 0.2.1
+version: 0.2.2
 homepage: https://codelessly.com
 repository: https://github.com/Codelessly/FlutterLoadingGIFs
 issue_tracker: https://github.com/Codelessly/FlutterLoadingGIFs/issues

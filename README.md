@@ -62,6 +62,14 @@ The small variant should be used when loading a list of images or compositing an
   )
 ```
 
+### Empty Placeholder
+
+`FadeInImage` requires a valid placeholder image to avoid "Asset not found" errors. Use `placeholderEmpty`, a 1x1 pixel transparent PNG, when an empty placeholder is needed.
+
+```dart
+FadeInImage.assetNetwork(placeholder: placeholderEmpty, image: "image.png");
+```
+
 ## Assets
 
 ### iOS (Cupertino) Loading Indicators

@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2
+- Create 1x1 pixel empty placeholder image.
+
 ## 0.2.1
 - Update ReadMe images and links.
 
