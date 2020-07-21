@@ -1,3 +1,4 @@
+/// Loading indicator GIFs. Material and Cupertino (Android and iOS) loading indicators in assorted sizes. Use as placeholders for loading remote image assets.
 library loading_gifs;
 
 /// CupertinoActivityIndicator GIF asset path.

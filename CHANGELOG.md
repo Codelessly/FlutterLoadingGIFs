@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.3
+- Complete API documentation comments.
+
 ## 0.2.2
 - Create 1x1 pixel empty placeholder image.
 
