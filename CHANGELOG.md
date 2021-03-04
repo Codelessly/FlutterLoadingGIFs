@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.0
+- Null safety release.
+
 ## 0.2.3
 - Complete API documentation comments.
 
