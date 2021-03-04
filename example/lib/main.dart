@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-Widget subHeaderText(String title, {String subtitle}) {
+Widget subHeaderText(String title, {String? subtitle}) {
   return Padding(
     padding: EdgeInsets.fromLTRB(16, 16, 16, 8),
     child: Column(
@@ -100,16 +100,16 @@ Widget subHeaderText(String title, {String subtitle}) {
 class ShowcaseCard extends StatelessWidget {
   final Widget child;
   final double width;
-  final String caption;
-  final String label;
+  final String? label;
+  final String? caption;
 
-  const ShowcaseCard(
-      {Key key,
-      @required this.child,
-      this.width = 200,
-      this.caption,
-      this.label})
-      : super(key: key);
+  const ShowcaseCard({
+    Key? key,
+    required this.child,
+    this.width = 200,
+    this.label,
+    this.caption,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -124,7 +124,7 @@ class ShowcaseCard extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                label,
+                label!,
                 style: TextStyle(
                     fontSize: 14,
                     color: Color(0xFF3A3A3C),
@@ -164,7 +164,7 @@ class ShowcaseCard extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              caption,
+                              caption!,
                               style: TextStyle(
                                   fontSize: 12,
                                   color: Color(0xFF8E8E93),
